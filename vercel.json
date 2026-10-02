@@ -1,0 +1,10 @@
+{
+  "functions": {
+    "app/goal/route.js": {
+      "maxDuration": 30
+    },
+    "app/api/goal/route.js": {
+      "maxDuration": 30
+    }
+  }
+}

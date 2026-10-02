@@ -1,0 +1,1 @@
+Put your own background images in this folder if desired. The current API uses an external background URL or its built-in dark background.
