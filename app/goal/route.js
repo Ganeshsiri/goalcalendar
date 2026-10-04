@@ -15,8 +15,6 @@ export async function GET(request) {
       width: searchParams.get("width"),
       height: searchParams.get("height"),
 
-      background: searchParams.get("background"),
-
       completedColor: searchParams.get("completed_color"),
       remainingColor: searchParams.get("remaining_color"),
       todayColor: searchParams.get("today_color"),
@@ -31,7 +29,7 @@ export async function GET(request) {
       subtitleSize: searchParams.get("subtitle_size"),
       showSubtitle: searchParams.get("show_subtitle"),
 
-      opacity: searchParams.get("opacity")
+      opacity: searchParams.get("opacity"),
     });
 
     return new NextResponse(buffer, {
@@ -39,13 +37,13 @@ export async function GET(request) {
       headers: {
         "Content-Type": "image/png",
         "Cache-Control": "no-store, max-age=0",
-        "Content-Disposition": 'inline; filename="life-calendar.png"'
-      }
+        "Content-Disposition": 'inline; filename="life-calendar.png"',
+      },
     });
   } catch (error) {
     return NextResponse.json(
       {
-        error: error?.message || "Unable to generate calendar image."
+        error: error?.message || "Unable to generate calendar image.",
       },
       { status: 400 }
     );
