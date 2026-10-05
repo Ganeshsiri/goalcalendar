@@ -1,1 +1,1 @@
-export { GET } from "../../../goal/route";
+export { GET } from "../../goal/route";
