@@ -8,7 +8,10 @@ export async function GET(request) {
   try {
     const { searchParams } = new URL(request.url);
 
+    const backgroundUrl = searchParams.get("background");
+
     const buffer = await generateGoalImage({
+      backgroundUrl,
       goal: searchParams.get("goal") || "My Goal",
       startDate: searchParams.get("start_date"),
       goalDate: searchParams.get("goal_date"),
