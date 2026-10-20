@@ -26,6 +26,8 @@ export async function GET(request) {
 
       dotSize: searchParams.get("dot_size"),
       dotGap: searchParams.get("dot_gap"),
+      horizontalGap: searchParams.get("horizontal_gap"),
+      verticalGap: searchParams.get("vertical_gap"),
       topMargin: searchParams.get("top_margin"),
       sideMargin: searchParams.get("side_margin"),
       titleSize: searchParams.get("title_size"),

@@ -58,7 +58,8 @@ today_color=%23FF9800
 text_color=%23F2F2F2
 subtitle_color=%23A8A8A8
 dot_size=7
-dot_gap=16
+horizontal_gap=60
+vertical_gap=30
 top_margin=210
 side_margin=100
 title_size=62
@@ -70,8 +71,12 @@ opacity=1
 Example:
 
 ```text
-https://YOUR-APP.vercel.app/goal?goal=175%20Days%20Hard&start_date=2026-09-27&goal_date=2027-03-20&width=1080&height=2640&completed_color=%23FFFFFF&remaining_color=%23666666&today_color=%23FF9800&dot_size=7&dot_gap=16
+https://YOUR-APP.vercel.app/goal?goal=175%20Days%20Hard&start_date=2026-09-27&goal_date=2027-03-20&width=1080&height=2640&completed_color=%23FFFFFF&remaining_color=%23666666&today_color=%23FF9800&dot_size=7&horizontal_gap=60&vertical_gap=30
 ```
+
+Future dates are shown as transparent circles outlined with `remaining_color`.
+`dot_size`, `horizontal_gap`, `vertical_gap`, `top_margin`, and `side_margin`
+are optional and can be adjusted independently.
 
 ## 5. Date behavior
 
